@@ -22,7 +22,7 @@ namespace EmailServiceTests.ControllerTests
             builder.Configuration.GetSection(nameof(EmailSettings))
                 .Bind(settings);
         }
-        
+
 
         readonly IEmaillController emailControllers = new EmailController(settings);
 
