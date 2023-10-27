@@ -14,10 +14,10 @@ namespace EmailService.DbModels
 
         public string? DisplayName { get; set; }
         [Required]
-        public string To { get; set; }
-        public string Bcc { get; set; }
+        public string? To { get; set; }
+        public string? Bcc { get; set; }
 
-        public string Cc { get; set; }
+        public string? Cc { get; set; }
         [Required]
         public string? ReplyTo { get; set; }
 
