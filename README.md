@@ -1,5 +1,7 @@
 # Emails service
 
+This service send emails seted in database and deleted it when sended or reached numbers of trials to expired 
+
 To run: 
 
 1. Create file appsettings.json in project main folder like (NrOfTrialsToExpired is for deleted not delivered mail after x number of try):

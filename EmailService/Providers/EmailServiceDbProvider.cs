@@ -91,7 +91,7 @@ namespace EmailService.Providers
                 try
                 {
 
-                    List<DbEmail>? emails = _dbContext.Emails.Where(el => el.WasSended || el.Trials > nrOfTrialsToExpired).ToList();
+                    List<DbEmail>? emails = _dbContext.Emails.Where(el => el.WasSended || el.Trials <= nrOfTrialsToExpired).ToList();
 
                     if (emails == null || emails.Count == 0)
                         return 0;
